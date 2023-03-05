@@ -5,4 +5,6 @@ use (
 	./src/fecha
 	./src/hello
 	./src/secuencias
+	./src/ciclos
+	./src/condicionales
 )
