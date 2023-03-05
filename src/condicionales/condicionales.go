@@ -1,11 +1,11 @@
-package main
+package condicionales
 
 import (
 	"fmt"
 	"time"
 )
 
-func condicional(numero int) {
+func Condicional(numero int) {
 	if numero%2 == 0 {
 		fmt.Printf("%v es par\n", numero)
 	} else {
@@ -25,7 +25,7 @@ func condicional(numero int) {
 	}
 }
 
-func swtich_basico() {
+func Swtich_basico() {
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("Hoy es fin de semana")
@@ -34,13 +34,34 @@ func swtich_basico() {
 	}
 }
 
-func main() {
-	var numero int
+func Switch_sin_condicion(hora int) {
+	switch { // no hay expresion booleana
+	case hora < 12:
+		fmt.Printf("Son las %v buen día\n", hora)
+	case hora < 19:
+		fmt.Printf("Buenas tardes, son las %v\n", hora)
+	default:
+		fmt.Printf("Buenas noches, son las %v\n", hora)
+	}
+}
+func Switch_multiple(caracter rune) {
+	switch caracter {
+	case ' ', '\t', '\n', '\f', '\r':
+		fmt.Println("Es blanco")
+		return
+	}
+	fmt.Println("No es un blanco")
+}
 
-	fmt.Print("Ingrese un entero: ")
-	fmt.Scanln(&numero)
-
-	condicional(numero)
-
-	swtich_basico()
+func Switch_fallthrough(numero int) {
+	switch numero {
+	case 1:
+		fmt.Println("1")
+		fallthrough
+	case 2:
+		fmt.Println("2")
+		fallthrough
+	case 3:
+		fmt.Println("3")
+	}
 }
