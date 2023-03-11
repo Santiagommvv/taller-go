@@ -36,4 +36,11 @@ func main() {
 
 	//constantes predefinidas
 	fmt.Println(math.Pi)
+
+	//Números complejos
+	var complejo complex64
+	complejo = complex(0, 1)
+	cuadrado := complejo * complejo
+
+	fmt.Printf("%v ** 2 = %v\n", complejo, cuadrado)
 }

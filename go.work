@@ -8,4 +8,5 @@ use (
 	./src/ciclos
 	./src/condicionales
 	./src/funciones
+	./src/punteros
 )

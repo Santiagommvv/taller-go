@@ -18,4 +18,7 @@ func main() {
 
 	resultado, resto := funciones.Dividir(10, 3)
 	fmt.Println(resultado, resto)
+
+	total := funciones.Sumar(10, 10, 10)
+	fmt.Println("El total de la suma es: ", total)
 }
