@@ -1,5 +1,7 @@
-package secuencias
+package arreglos
 
+// Dado un arreglo devuelve la posicion inicial, la posición final y el valor
+// de la subsecuencia cuya suma es máxima dentro del arreglo original
 func SubsecuenciaSumaMaxima(arreglo []int) (int, int, int) {
 	sumaMaxima := 0
 	posInicial, posFinal := -1, -1

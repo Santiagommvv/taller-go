@@ -9,4 +9,6 @@ use (
 	./src/condicionales
 	./src/funciones
 	./src/punteros
+	./src/arreglos
+	./src/figuras
 )
