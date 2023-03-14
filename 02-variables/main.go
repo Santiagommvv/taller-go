@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-// Declaraciones
+// Declaraciones "globales"
 // entero := 1 // No es posible declaración corta fuera de funciones
 var entero = 1
 var enteroDeclarado int = 1
@@ -38,7 +38,9 @@ func main() {
 
 		entero1, entero2 := 1, 2
 
+		// Variable local "esconde" a la variable "global"
 		enteroZ1 := 1 // OK
+		// No se puede definir nuevamente, como toda variable (en su contexto)
 		enteroZ1 := 2 // ERROR
 	*/
 
