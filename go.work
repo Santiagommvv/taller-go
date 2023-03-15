@@ -11,5 +11,5 @@ use (
 	./07-punteros
 	./08-arreglos
 	./09-mapas
-	./FALTAPASAR/figuras
+	./10-figuras
 )
