@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-const s string = "constant"
+const s string = "constante"
 
 func main() {
 	// Constantes predefinidas

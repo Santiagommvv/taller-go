@@ -26,24 +26,25 @@ var (
 )
 
 func main() {
-	/*
-		enteroAsignacionCortaEImplicita := 1
-		var enteroAsignacionImplicita = 1
-		var enteroAsignacionExplicita int = 1
-		var enteroVacioExplicito int // = 0 -> Valor cero en su tipo
-		var enteroAsignacionExplicita int = 1.2 // ERROR
+	//enteroZ1 = 10
+	//enteroAsignacionCortaEImplicita := 1
+	//var enteroAsignacionImplicita = 1
+	//var enteroAsignacionExplicita int = 1
+	//var enteroVacioExplicito int // = 0 -> Valor cero en su tipo
+	//var enteroAsignacionExplicita int = 1.2 // ERROR
 
-		var f float32 = 1.2
-		var enteroAsignacionExplicita int = int(f)
+	//var f float32 = 1.2
+	//var enteroAsignacionExplicita int = int(f)
 
-		entero1, entero2 := 1, 2
+	//entero1, entero2 := 1, 2
 
-		// Variable local "esconde" a la variable "global"
-		enteroZ1 := 1 // OK
-		// No se puede definir nuevamente, como toda variable (en su contexto)
-		enteroZ1 := 2 // ERROR
-	*/
+	// Variable local "esconde" a la variable "global"
+	//enteroZ1 := 1 // OK
 
+	// No se puede definir nuevamente, como toda variable (en su contexto)
+	//enteroZ1 := 2 // ERROR
+
+	fmt.Println(enteroZ1)
 	fmt.Println("Contenido de los enteros sin asignar: ", enteroZ1, enteroZ2, enteroZ3)
 
 	fmt.Printf("Tipo: %T. Valor: %v\n", encendido, encendido)

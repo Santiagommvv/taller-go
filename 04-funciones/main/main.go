@@ -15,11 +15,15 @@ func main() {
 	y := "Hola"
 	fmt.Println("x:", x, "| y:", y)
 	x, y = funciones.Swap(x, y)
+	e1, e2 := 5, 10
+	e2, e1 = e1, e2
+
+	fmt.Println(e1, e2)
 	fmt.Println("Swap => x:", x, "| y:", y)
 
 	resultado, resto := funciones.Dividir(10, 3)
 	fmt.Printf("Division: %d. Resto: %d\n", resultado, resto)
 
-	total := funciones.Sumar(10, 10, 10)
+	total := funciones.Sumar(10, 10, 10, 10, 10, 5)
 	fmt.Println("El total de la suma es:", total)
 }

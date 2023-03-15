@@ -23,7 +23,7 @@ func main() {
 		"y su suma es %v\n", inicial, final, suma_maxima)
 
 	// Tajadas o Slices
-	tajada := a3[inicial : final+1]
+	tajada := a3[inicial:]
 	fmt.Println(tajada)
 
 	for i := 0; i < len(tajada); i++ {

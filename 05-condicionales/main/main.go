@@ -17,5 +17,5 @@ func main() {
 	condicionales.Swtich_basico()
 	condicionales.Switch_sin_condicion(time.Now().Local().Hour())
 	condicionales.Switch_multiple(' ')
-	condicionales.Switch_fallthrough(1)
+	condicionales.Switch_fallthrough(2)
 }

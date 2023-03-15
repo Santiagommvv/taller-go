@@ -9,3 +9,7 @@ func Incrementar(num *int) {
 
 	fmt.Println("La dirección de memoria del numero es: ", num)
 }
+
+func Incrementar2(num int) {
+	num++
+}
