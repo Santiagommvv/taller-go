@@ -1,6 +1,7 @@
 go 1.20
 
 use (
+	./00-hola
 	./01-tipodatos
 	./02-variables
 	./03-constantes
