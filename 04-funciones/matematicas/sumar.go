@@ -1,4 +1,4 @@
-package funciones
+package matematicas
 
 // Sumar es una función variádica, es decir con una cantidad
 // indefinida de enteros
