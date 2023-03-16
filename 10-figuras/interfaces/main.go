@@ -1,7 +1,7 @@
 package main
 
 import (
-	"figuras"
+	"figuras/figuras"
 	"fmt"
 )
 
