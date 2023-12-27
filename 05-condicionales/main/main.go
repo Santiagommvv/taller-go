@@ -1,9 +1,9 @@
 package main
 
 import (
-	"condicionales/condicionales"
 	"fmt"
 	"time"
+	"github.con/untref-ayp2/taller-GO/05-condicionales/condicionales"
 )
 
 func main() {
