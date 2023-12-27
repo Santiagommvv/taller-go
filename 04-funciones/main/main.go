@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"modfunciones/genericas"
-	"modfunciones/matematicas"
+	"github.con/untref-ayp2/taller-GO/04-funciones/genericas"
+	"github.con/untref-ayp2/taller-GO/04-funciones/matematicas"
 )
 
 func main() {
