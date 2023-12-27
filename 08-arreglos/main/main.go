@@ -1,8 +1,9 @@
 package main
 
 import (
-	"arreglos/arreglos"
 	"fmt"
+
+	"github.con/untref-ayp2/taller-GO/08-arreglos/arreglos"
 )
 
 func main() {

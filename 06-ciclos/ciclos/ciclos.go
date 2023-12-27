@@ -1,6 +1,8 @@
 package ciclos
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func Java() {
 	// A la Java

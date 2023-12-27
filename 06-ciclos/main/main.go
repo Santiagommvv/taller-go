@@ -1,6 +1,8 @@
 package main
 
-import "ciclos/ciclos"
+import (
+	"github.com/untref-ayp2/taller-GO/06-ciclos/ciclos"
+)
 
 func main() {
 	ciclos.Java()

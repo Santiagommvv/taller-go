@@ -1,8 +1,9 @@
 package main
 
 import (
-	"figuras/figuras"
 	"fmt"
+
+	"github.con/untref-ayp2/taller-GO/10-figuras/figuras"
 )
 
 func main() {

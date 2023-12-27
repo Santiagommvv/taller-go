@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"punteros/punteros"
+	"github.con/untref-ayp2/taller-GO/07-punteros/punteros"
 )
 
 func main() {
