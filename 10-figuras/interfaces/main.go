@@ -13,8 +13,8 @@ func mostrar(f figuras.Figura) {
 }
 
 func main() {
-	p1 := figuras.Punto{0, 0}
-	p2 := figuras.Punto{10, 5}
+	p1 := figuras.Punto{X: 0, Y: 0}
+	p2 := figuras.Punto{X: 10, Y: 5}
 
 	r := figuras.Rectangulo{P1: p1, P2: p2}
 	c := figuras.Cuadrado{Pto: p1, Lado: 10}
