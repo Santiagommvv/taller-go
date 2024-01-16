@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.con/untref-ayp2/taller-GO/10-figuras/figuras"
+	"github.com/untref-ayp2/taller-GO/10-figuras/figuras"
 )
 
 func mostrar(f figuras.Figura) {

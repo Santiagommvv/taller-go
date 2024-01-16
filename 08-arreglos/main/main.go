@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.con/untref-ayp2/taller-GO/08-arreglos/arreglos"
+	"github.com/untref-ayp2/taller-GO/08-arreglos/arreglos"
 )
 
 func main() {
