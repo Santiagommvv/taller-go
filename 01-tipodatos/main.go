@@ -24,6 +24,6 @@ Nota: Los tamaños de int, uint y uintptr varian segun el sistema (normalmente 3
 
 func main() {
 	var i int
-	fmt.Printf("Tamaño en bytes del tipo int): %d\n", reflect.TypeOf(i).Size())
+	fmt.Printf("Tamaño en bytes del tipo int: %d\n", reflect.TypeOf(i).Size())
 	fmt.Printf("Tamaño en bytes de la variable i: %d\n", unsafe.Sizeof(i))
 }
