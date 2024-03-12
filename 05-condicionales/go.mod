@@ -1,3 +1,3 @@
 module github.com/untref-ayp2/taller-GO/05-condicionales
 
-go 1.22.0
+go 1.22

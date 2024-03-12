@@ -1,1 +1,1 @@
-# taller-GO
+# Taller de Go
