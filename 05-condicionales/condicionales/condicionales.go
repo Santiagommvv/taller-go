@@ -15,9 +15,11 @@ func Condicional(numero int) {
 	if numero%4 == 0 {
 		fmt.Printf("%v es divisible por 4\n", numero)
 	}
+
 	if numero < 0 {
 		fmt.Printf("%v es negativo\n", numero)
 	}
+
 	if (numero > 0 && numero < 10) || (numero < 0 && numero > -10) {
 		fmt.Printf("%v tiene un dígito\n", numero)
 	} else {
@@ -25,7 +27,7 @@ func Condicional(numero int) {
 	}
 }
 
-func Swtich_basico() {
+func SwtichBasico() {
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("Hoy es fin de semana")
@@ -34,7 +36,7 @@ func Swtich_basico() {
 	}
 }
 
-func Switch_sin_condicion(hora int) {
+func SwitchSinCondicion(hora int) {
 	switch { // no hay expresion booleana
 	case hora < 12:
 		fmt.Printf("Son las %v buen día\n", hora)
@@ -44,7 +46,8 @@ func Switch_sin_condicion(hora int) {
 		fmt.Printf("Buenas noches, son las %v\n", hora)
 	}
 }
-func Switch_multiple(caracter rune) {
+
+func SwitchMultiple(caracter rune) {
 	switch caracter {
 	case ' ', '\t', '\n', '\f', '\r':
 		fmt.Println("Es blanco")
@@ -53,7 +56,7 @@ func Switch_multiple(caracter rune) {
 	fmt.Println("No es un blanco")
 }
 
-func Switch_fallthrough(numero int) {
+func SwitchFallthrough(numero int) {
 	switch numero {
 	case 1:
 		fmt.Println("1")
