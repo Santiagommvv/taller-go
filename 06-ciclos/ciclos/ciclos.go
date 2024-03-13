@@ -9,6 +9,7 @@ func Java() {
 	for i := 0; i < 10; i++ {
 		fmt.Printf("%v\t", i)
 	}
+	fmt.Println()
 }
 
 func While() {
@@ -18,6 +19,7 @@ func While() {
 		fmt.Printf("%v\t", i)
 		i++
 	}
+	fmt.Println()
 }
 func Infinito() {
 	// Bucle infinito
@@ -29,6 +31,7 @@ func Infinito() {
 		fmt.Printf("%v\t", i)
 		i++
 	}
+	fmt.Println()
 }
 
 func Range_arreglo() {
