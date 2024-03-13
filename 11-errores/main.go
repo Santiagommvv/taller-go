@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type MyError struct {
 	Code    int
@@ -21,10 +19,10 @@ func Divide(a, b float64) (float64, error) {
 }
 
 func main() {
-	result, err := Divide(10, 0)
+	res, err := Divide(10, 0)
 	if err != nil {
-		fmt.Println("error: ", err)
+		fmt.Print(err)
 		return
 	}
-	fmt.Println("result: ", result)
+	fmt.Println("Resultado:", res)
 }
