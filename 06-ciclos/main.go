@@ -8,6 +8,6 @@ func main() {
 	ciclos.Java()
 	ciclos.While()
 	ciclos.Infinito()
-	ciclos.Range_arreglo()
-	ciclos.Range_string()
+	ciclos.RangeArreglo()
+	ciclos.RangeString()
 }
