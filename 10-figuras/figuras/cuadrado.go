@@ -3,24 +3,26 @@ package figuras
 import "fmt"
 
 type Cuadrado struct {
-	Pto  Punto //esquina inferior izquierda
-	Lado int
+	posicion Punto // esquina inferior izquierda
+	lado     int
+}
+
+func NewCuadrado(posicion Punto, lado int) Cuadrado {
+	return Cuadrado{posicion: posicion, lado: lado}
 }
 
 func (c *Cuadrado) Mover(incX, incY int) {
-	c.Pto.Mover(incX, incY)
+	c.posicion.Mover(incX, incY)
 }
 
 func (c Cuadrado) Perimetro() int {
-	return 4 * c.Lado
+	return 4 * c.lado
 }
 
 func (c Cuadrado) Area() int {
-	return c.Lado * c.Lado
+	return c.lado * c.lado
 }
 
-func (c Cuadrado) ToString() string {
-	cadena := fmt.Sprint("Cuadrado:", c)
-
-	return cadena
+func (c Cuadrado) String() string {
+	return fmt.Sprintf("Cuadrado: [%v, %v]", c.posicion.String(), c.lado)
 }

@@ -7,17 +7,17 @@ import (
 )
 
 func mostrar(f figuras.Figura) {
-	fmt.Println(f.ToString())
+	fmt.Println(f)
 	fmt.Println("Area: ", f.Area())
 	fmt.Println("Perimetro: ", f.Perimetro())
 }
 
 func main() {
-	p1 := figuras.Punto{X: 0, Y: 0}
-	p2 := figuras.Punto{X: 10, Y: 5}
+	p1 := figuras.NewPunto(0, 0)
+	p2 := figuras.NewPunto(10, 5)
 
-	r := figuras.Rectangulo{P1: p1, P2: p2}
-	c := figuras.Cuadrado{Pto: p1, Lado: 10}
+	r := figuras.NewRectangulo(p1, p2)
+	c := figuras.NewCuadrado(p1, 10)
 
 	arreglo_figuras := [2]figuras.Figura{r, c}
 
