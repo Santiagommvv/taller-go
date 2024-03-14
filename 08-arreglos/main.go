@@ -12,7 +12,7 @@ func main() {
 	a3 := []int{-1, 5, -6, 10, 7, 2, -10, 5, 3, 4}
 
 	fmt.Println(a1)
-	arreglos.Insertion_sort(a1)
+	arreglos.InsertionSort(a1)
 	fmt.Println(a1)
 	fmt.Println(a2)
 

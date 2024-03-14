@@ -8,17 +8,19 @@ import (
 )
 
 // Declaraciones "globales"
-// entero := 1 // No es posible declaración corta fuera de funciones
 var entero = 1
 var enteroDeclarado int = 1
 var entero1, entero2, entero3 = 1, 2, 3
 var entero4, entero5, entero6 int = 1, 2, 3
 var enteroZ1, enteroZ2, enteroZ3 int
 
-// var nombre string, apellido string, edad int = "Nombre", "Apellido", 120
-var nombre, apellido, edad = `Nombre "Alias"`, "Apellido", 120
+// No es posible usar la declaración corta fuera de funciones
+// otroEntero := 1
 
-// Multiple declaracion
+// var nombre string, apellido string, edad int = "Nombre", "Apellido", 120
+var nombre, apellido, edad = "Nombre", "Apellido", 120
+
+// Declaración múltiple.
 var (
 	encendido bool       = false
 	MaxUInt64 uint64     = 1<<64 - 1
@@ -45,13 +47,13 @@ func main() {
 	//enteroZ1 := 2 // ERROR
 
 	fmt.Println(enteroZ1)
-	fmt.Println("Contenido de los enteros sin asignar: ", enteroZ1, enteroZ2, enteroZ3)
+	fmt.Println("Contenido de los enteros sin asignar:", enteroZ1, enteroZ2, enteroZ3)
 
-	fmt.Printf("Tipo: %T. Valor: %v\n", encendido, encendido)
-	fmt.Printf("Tipo: %T. Valor: %v\n", MaxUInt64, MaxUInt64)
-	fmt.Printf("Tipo: %T. Valor: %v\n", complejoZ, complejoZ)
+	fmt.Printf("Tipo: %-10T Valor: %v\n", encendido, encendido)
+	fmt.Printf("Tipo: %-10T Valor: %v\n", MaxUInt64, MaxUInt64)
+	fmt.Printf("Tipo: %-10T Valor: %v\n", complejoZ, complejoZ)
 
 	currentTime := time.Now()
-	fmt.Println(reflect.TypeOf(currentTime))
-	fmt.Println(reflect.TypeOf(complejoZ))
+	fmt.Println("El tipo de `time.Now()` es:", reflect.TypeOf(currentTime))
+	fmt.Println("El tipo de `complejoZ` es:", reflect.TypeOf(complejoZ))
 }

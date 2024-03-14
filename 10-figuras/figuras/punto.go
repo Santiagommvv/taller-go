@@ -3,16 +3,18 @@ package figuras
 import "fmt"
 
 type Punto struct {
-	X int
-	Y int
+	x, y int
 }
 
-func (p *Punto) ToString() string {
-	cadena := fmt.Sprintf("(%v, %v)", p.X, p.Y)
-	return cadena
+func NewPunto(x, y int) Punto {
+	return Punto{x: x, y: y}
 }
 
 func (p *Punto) Mover(x, y int) {
-	p.X += x
-	p.Y += y
+	p.x += x
+	p.y += y
+}
+
+func (p Punto) String() string {
+	return fmt.Sprintf("(%v, %v)", p.x, p.y)
 }
