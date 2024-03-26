@@ -69,7 +69,7 @@ go version go1.22.0 <nombre-de-la-arquitectura>
 ```
 
 Como recomendación utilicen la última versión disponible, que al día de hoy es
-1.22, o de mínima la version 1.16 que es la versión donde se introdujo el
+1.22, o de mínima la version 1.20 que es la versión donde se introdujo el
 soporte para módulos.
 
 ### Problemas al ejecutar `go run`
