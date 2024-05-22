@@ -34,6 +34,6 @@ import (
 
 func main() {
 	var i int
-	fmt.Printf("Tamaño en bytes del tipo: %d\n", reflect.TypeOf(i).Size())
+	fmt.Printf("Tamaño en bytes del tipo int: %d\n", reflect.TypeOf(i).Size())
 	fmt.Printf("Tamaño en bytes de la variable i: %d\n", unsafe.Sizeof(i))
 }
